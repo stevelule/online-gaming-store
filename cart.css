@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: none; /* Clear any direct background on body */
+    padding-top: 60px; /* Space for fixed header */
+    padding-bottom: 60px; /* Space for fixed footer */
+    position: relative;
+  }
+  
+  /* Background Image (GIF) */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(cartgif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(30%); /* Adjust brightness only for the GIF */
+    z-index: -1; /* Places it behind everything else */
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Keeps it above other content */
+  }
+  
+  /* Navigation Styling */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Better alignment and flexibility */
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: none;
+    color: palevioletred;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 1px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Keeps it above other content */
+  }
+  
+  /* Cart Page Styling */
+  .cart {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     /* Ensures the cart takes up remaining space if needed */
+    overflow-y: auto; /* Allows scrolling inside the cart if content overflows */
+    margin-top: 20px;
+    margin-bottom: 60px; /* Ensures space above footer */
+  }
+  
+  /* Cart Header */
+  .cart h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Table Styling */
+  #cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  #cart-table th, #cart-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  #cart-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #cart-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Button Styling Inside Table */
+  #cart-table button {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #cart-table button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Total Price Section Styling */
+  .cart-total {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart-total p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cart-total span {
+    color: rgba(0, 128, 64, 0.9); /* Emerald Green */
+  }
+  
+  /* Checkout Button Styling */
+  button {
+    background-color: #2980b9; 
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3498db;
+  }
+  

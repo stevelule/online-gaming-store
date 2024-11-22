@@ -1,0 +1,158 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url(bcat.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: auto; /* Ensure vertical scrolling works */
+  min-height: 100vh; /* Ensures the body takes full viewport height */
+}
+
+/* Header and Navigation Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensures the header stays on top of other content */
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+/* Main Section Styling */
+main.catalog {
+  padding: 20px;
+  text-align: center;
+}
+
+main.catalog h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.catalog-table {
+  width: 80%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgba(200, 200, 200, 0.7); /* Semi-transparent background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: inherit;
+}
+
+.catalog-table th, .catalog-table td {
+  padding: 15px;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.catalog-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Styling for Game Images */
+.game-image {
+  width: 120px; /* Set a fixed width for uniformity */
+  height: 120px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensures the image fills the box without distortion */
+  border-radius: 10px; /* Adds rounded corners to the images */
+}
+
+/* Styling for Action Buttons */
+.catalog-table td button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.catalog-table td button:hover {
+  background-color: #218838;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 4px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+.success-message {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35%;
+  z-index: 1000; /* Ensures the success message is on top of the header */
+  animation: fadeIn 0.5s ease-in-out;
+}
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

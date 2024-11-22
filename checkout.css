@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Add top padding to prevent content from hiding under the fixed header */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make sure the header spans the entire width */
+  z-index: 999; /* Ensure it stays on top of other content */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Checkout Page Styles */
+.checkout {
+  padding: 20px;
+  max-width: 650px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.checkout h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"], select {
+  width: auto;
+  outline: none;
+}
+
+button {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+/* Form Input Validation */
+input:invalid, select:invalid {
+  border-color: burlywood;
+}
+
+input:valid, select:valid {
+  border-color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout {
+      padding: 10px;
+      margin: 10px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+/* Style for the table container */
+#checkout-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Table header style */
+#checkout-cart-table th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+/* Table row style */
+#checkout-cart-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Table data style */
+#checkout-cart-table td {
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Table border style */
+#checkout-cart-table th, #checkout-cart-table td {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+/* Total price style */
+.cart-total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-total p {
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

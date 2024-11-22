@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Catalog</title>
+  <link rel="stylesheet" href="catalog.css">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog">
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;margin-top: 40px;">Game Catalog</h2>
+    <table class="catalog-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Game</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="tekken.jpg" alt="Game Title 1" class="game-image"></td>
+          <td>TEKKEN VII</td>
+          <td>Action</td>
+          <td>Ksh1700.00</td>
+          <td><button onclick="addToCart('TEKKEN VII', 1700)">Add to Cart</button></td>
+
+        </tr>
+        <tr>
+          <td><img src="blackops.jpeg" alt="Game Title 2" class="game-image"></td>
+          <td>CALL OF DUTY<br> BLACK OPS VI</td>
+          <td>Adventure, Shooter</td>
+          <td>Ksh1000.00</td>
+          <td><button onclick="addToCart('CALL OF DUTY', 1000.00)">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="fallout.jpg" alt="Game Title 3" class="game-image"></td>
+          <td>FALLOUT IV</td>
+          <td>Shooter</td>
+          <td>Ksh1400.00</td>
+          <td> <button onclick="addToCart('FALLOUT IV', 1400.00)">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="dis.jpg" alt="Game Title 4" class="game-image"></td>
+          <td>DISHONOURED 2:<br>death of the outsider</td>
+          <td>Adventure</td>
+          <td>Ksh700.00</td>
+          <td> <button onclick="addToCart('DISHONOURED II', 700.00)">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td><img src="borderlands.jpg" alt="Game Title 5" class="game-image"></td>
+          <td>BORDERLANDS III</td>
+          <td>Strategy</td>
+          <td>Ksh2000.00</td>
+          <td> <button onclick="addToCart('BORDERLANDS III', 1000.00)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td><img src="far.jpeg" alt="Game Title 5" class="game-image"></td>
+            <td>FAR CRY 5</td>
+            <td>Adventure, shooter</td>
+            <td>Ksh1900.00</td>
+            <td><button onclick="addToCart('FAR CRY 5', 1900.00)">Add to Cart</button></td>
+          </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2024 Lule's Online Gaming Store</p>
+  </footer>
+ 
+</body>
+</html>
